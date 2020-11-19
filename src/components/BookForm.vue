@@ -12,7 +12,7 @@
       <label for="bought">bought</label>
       <input v-model="bookData.ownership" type="radio" value="bought">
     </div>
-    <button type="submit" name="button" @submit.prevent="bookSubmit(bookData)">Add Book</button>
+    <button type="submit" name="button" v-on:submit.prevent="bookSubmit(bookData)">Add Book</button>
   </form>
 </template>
 
